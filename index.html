@@ -60,9 +60,9 @@
         
         <div class="datos">Nombre: Comercial Weichafe
 RUT: 77.261.833-6
-Banco: Banco Santander
-Tipo de Cuenta: Cuenta Corriente
-N° de Cuenta: 91013800
+Banco: Santander
+Tipo: Cuenta Corriente
+Cuenta: 91013800
 Correo: Transferenciaslocal16@gmail.com</div>
         
         <button onclick="copiarDatos()">Copiar Datos</button>
@@ -70,8 +70,8 @@ Correo: Transferenciaslocal16@gmail.com</div>
 
     <script>
         function copiarDatos() {
-            // Texto puro con saltos de línea limpios (\n) para el portapapeles del teléfono
-            const textoLimpio = "Nombre: Comercial Weichafe\nRUT: 77.261.833-6\nBanco: Banco Santander\nTipo de Cuenta: Cuenta Corriente\nN° de Cuenta: 91013800\nCorreo: Transferenciaslocal16@gmail.com";
+            // Texto puro optimizado para evitar errores de parseo (regex) en las apps
+            const textoLimpio = "Nombre: Comercial Weichafe\nRUT: 77.261.833-6\nBanco: Santander\nTipo: Cuenta Corriente\nCuenta: 91013800\nCorreo: Transferenciaslocal16@gmail.com";
             
             navigator.clipboard.writeText(textoLimpio).then(() => {
                 alert('¡Datos copiados! Abre la app de tu banco y selecciona "Pegar".');
